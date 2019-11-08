@@ -105,6 +105,8 @@ function bigOrSmall(arr){
 	return answers
 }
 
+
+
 //////////////////PROBLEM 13////////////////////
 
 // Create a function called 'arrayReverser' that takes in one parameter, arr. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array in reverse and add each item to the new reversed array. Finally, return the new reversed array
@@ -112,7 +114,7 @@ function bigOrSmall(arr){
 function arrayReverser(arr){
 	let reversed=[];
 	for(let i=arr.length-1; i >=0; i--){
-		reversed.push([i]);
+		reversed.push(arr[i]);
 	}
 	return reversed
 }
@@ -154,6 +156,8 @@ myNumbers.forEach((el, i, arr) => myNumbersIndex.push(i))
 const notGeorge = ['Louis', 'Ted', 'Bill', 'Sharon', 'Mark', 'Angela']
 
 // let forTheLoveOfGeorge = notGeorge.map((el, i, arr) => el !== "George")
+
+let forTheLoveOfGeorge = notGeorge.map(el => el = "George")
 
 //////////////////PROBLEM 19////////////////////
 
