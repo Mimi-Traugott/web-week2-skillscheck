@@ -4,7 +4,7 @@
 //////////////////Step 1////////////////////
 // Create a new array called 'faveColors' and set it your three favorite colors as strings.
 
-faveColors = ["Green", "Blue", "Orange"]
+faveColors = ["green", "pink", "orange"]
 
 //////////////////Step 2////////////////////
 // Create an object called 'me' that has these keys: firstname, superHeroName, homeTown, superPowers, superPowerXP, profileImage. 
@@ -39,27 +39,31 @@ homeTown = me.homeTown
 
 //////////////////Step 4////////////////////
 //Create a function called 'setColor' that takes in one param called arr. Just to make sure that we only ever have three colors, use splice to trim the array to 3 colors. 
-function setColor(arr){
-    faveColors.splice(3)
+
+function setColor(arr) {
+    arr.splice(3)
+for (let i=0; i<arr.length; i++)
+background()
 }
+
+
 // Next, create a for loop to loop over the array. If any of the colors you chose is 'blue', change it's value to '#4D4DFF' which is just a more appealing color of blue. Outside of the for loop but still inside of setColor, invoke the function called background which will take in three arguments. These arguments should be each item of your array. This is a function we created for you to set the background colors.
-for(i = 0; i < arr.length; i++){
-    if (faveColors[i] === 'blue'){
-        faveColors[i] = '#4D4DFF'
-    }
-    background("Green", "Blue", "Orange")
-}
+
+for (let i=0; i<arr.length; i++)
+
+
 //////////////////Step 5////////////////////
 //Create a function called 'setPowers' that takes in arr as a parameter. Loop over the arr param and run a function called createLi(), which will take each item of the array as an agument. The createLi function is a function we created to set the data on the screen. It outside the scope of this project
 
-function setPowers(arr){
-    for(i = 0; i < arr.length; i++){
-        function createLi()
-}
+// function setPowers(arr){
+//     for(let i = 0; i < arr.length; i++){
+//         function createLi(arr)
+//     }
+// }
 
 //////////////////Step 6////////////////////
 //Lastly, create a function called redactInfo that will take in an obj as a paramter. Let's imagine our super hero needs to go undercover and we need to remove all info about them. That is what this function will do. Loop over the object and change each keys value to 'redacted'. Outside of the loop but still in the redactInfo function, run the function redacted() which is a function we created that will update the text on the screen.
 
-function redactInfo(obj){
-    for
-}
+// function redactInfo(obj){
+//     for(let i = 0; i < arr.length; i++)
+// }
